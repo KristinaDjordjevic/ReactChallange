@@ -1,13 +1,259 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: -webkit-pictograph;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper {
+  margin: auto;
+  padding: 0;
+}
+
+.content {
+  width: 90%;
+  margin: 5% auto;
+}
+
+.content .title {
+  color:rgb(58, 138, 192);
+}
+
+/* Header */
+.header {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background: white;
+	border-bottom: 1px solid gray;
+	padding: 0;
+	color: black;
+	text-align: left;
+}
+
+.header ul {
+	position: absolute;
+	width: 70%;
+	right: 15px;
+	top: 10px;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	text-align: right;
+	font-size: 5px;
+  z-index: 600;
+}
+
+.header .logo {
+  margin: 0;
+  padding: 15px;
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+}
+
+.header ul a {
+	color: rgb(58, 138, 192);
+}
+
+.header ul li {
+	display: inline-block;
+  margin-left: 0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Login Page */
+.login-container {
+  position: relative;
+  width: 600px;
+  margin: 10% auto;
+  background-color: whitesmoke;
+  height: 450px;
+}
+
+.login-container span {
+  font-size: 30px;
+}
+
+.login-container .login-title {
+  display: inline-block;
+  width: 275px;
+  margin-right: 10px;
+  text-align: right;
+  cursor: default;
+}
+
+.login-container .register-title {
+  display: inline-block;
+  width: 275px;
+  margin-left: 10px;
+  cursor: default;
+}
+
+.login-container .active {
+  color: rgb(58, 138, 192);
+}
+
+.login-box {
+  width: 90%;
+  margin: 5% auto;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: unset;
+}
+
+.login-box .error {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+.login-box button {
+  background-color:rgb(58, 138, 192);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 15px;
+  float: right;
+  margin-top: 15px;
+}
+
+/* Configs page */
+#configs-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#configs-table td, #configs-table th {
+  border: 1px solid #f2f2f2;
+  text-align: left;
+  padding: 8px;
+}
+
+#configs-table .right {
+  text-align: right;
+}
+
+#configs-table tr:nth-child(even) {
+  background-color:#f2f2f2;
+}
+
+#configs-table tr:hover {background-color: #ddd;}
+
+#configs-table button {
+  background-color:rgb(58, 138, 192);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+.create-config-btn {
+  background-color:rgb(58, 138, 192);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+/* Create config page */
+.create-config-container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.create-config-box {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.create-config-box input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: unset;
+}
+
+.create-config-box button {
+  background-color:rgb(58, 138, 192);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  margin: 15px 0 15px auto;
+}
+
+/* Edit config page */
+.edit-config-container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.edit-config-btn {
+  background-color:rgb(58, 138, 192);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+.edit-config-box {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.edit-config-box input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: unset;
+}
+
+.edit-config-box button {
+  background-color:rgb(58, 138, 192);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  margin: 15px 0 15px auto;
+}
+
+.edit-config-box .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+}
+
+/* Alert message */
+.alert-message-container {
+  background: whitesmoke;
+  padding: 1px 10px;
+  margin: 10px 0;
+  border-left: 2px solid rgb(58, 138, 192);
+}
+
+#alert-message-login {
+  margin-top: 205px;
+}
+
+#alert-message-register {
+  margin-top: 140px;
 }
