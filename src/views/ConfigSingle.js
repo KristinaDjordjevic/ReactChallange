@@ -93,7 +93,7 @@ class ConfigEdit extends Component {
                             <pre>
                                 <p>name: <b>{this.state.configName}</b></p>
                                 <p>version: <b>{this.state.configVersion}</b></p>
-                                <h4>data:</h4>
+                                <p>data:</p>
                                 <code>{JSON.stringify(this.state.previewData, null, 4)}</code>
                             </pre>
                             :
