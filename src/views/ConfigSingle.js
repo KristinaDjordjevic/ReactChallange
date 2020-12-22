@@ -98,7 +98,9 @@ class ConfigEdit extends Component {
                             </pre>
                             :
                             <Fragment>
-                                <h3>Edit {this.state.configName} {this.state.configVersion}</h3>
+                                <p>name: <b>{this.state.configName}</b></p>
+                                <p>version: <b>{this.state.configVersion}</b></p>
+                                <p>data:</p>
                                 <ReactJson src={this.state.data} name="data" onEdit={this.setData} onAdd={this.setData} onDelete={this.setData} defaultValue={''} style={{fontSize:"16px", fontFamily: "-webkit-pictograph"}}/>
                                 <button onClick={this.createConfig}>Submit</button>
                             </Fragment>
