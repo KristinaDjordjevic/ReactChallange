@@ -83,7 +83,6 @@ class ConfigEdit extends Component {
         return(
             <div className="content">
                 <div className="edit-config-container">
-                    <h1 className="title">Configuration</h1>
                     {!this.state.isEditConfig ?
                         <button className="edit-config-btn" onClick={()=>{this.isEditConfig()}}>Edit configuration</button>
                         :
