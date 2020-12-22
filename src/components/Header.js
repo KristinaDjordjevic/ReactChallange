@@ -9,7 +9,6 @@ class Header extends Component {
                     React challange
                 </div>
                 <ul>
-                    <a href="/config/create"><li>Create configuration</li></a>
                     <a href="/configs"><li>Configurations</li></a>
                 </ul>
             </div>
